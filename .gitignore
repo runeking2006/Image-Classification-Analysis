@@ -1,0 +1,38 @@
+# --- uv / Project Pinned Python Version ---
+.python-version
+
+# --- Virtual Environments ---
+# uv installs local dependencies here by default
+.venv/
+venv/
+ENV/
+env/
+
+# --- Python Build & Distribution ---
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# --- Python Caching ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Optional: Lockfile ---
+# Rule of thumb: COMMIT uv.lock if building an application/service (web app, script).
+# IGNORE uv.lock ONLY if you are building a library intended for distribution on PyPI.
+# uv.lock
+
+# --- Environments & Secrets ---
+.env
+.env.*
+.venv_meta/
+
+# --- Tools & Linters (Ruff, Mypy, pytest) ---
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
