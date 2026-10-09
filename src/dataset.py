@@ -1,3 +1,6 @@
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
+
 import torch
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader, random_split
